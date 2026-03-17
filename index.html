@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Alex .sh — Photography Portfolio</title>
+    <meta name="description" content="Cinematic street and travel photography from Moscow and beyond. Portraits, landscapes, and quiet human moments by Alex .sh." />
+    <meta name="author" content="Alex .sh" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Alex .sh — Photography Portfolio" />
+    <meta property="og:description" content="Cinematic street and travel photography from Moscow and beyond." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/full/_ART0294.webp" />
+
+    <!-- Favicon (inline SVG) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230b0d10'/><text x='16' y='23' font-family='serif' font-size='20' fill='%23c9b9a3' text-anchor='middle'>A</text></svg>" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Preload hero image -->
+    <link rel="preload" as="image" type="image/webp" href="img/thumb/profile.webp" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Skip link -->
+    <a class="skip-link" href="#gallery">Skip to gallery</a>
+
+    <!-- Header -->
+    <header class="site-header" role="banner">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="logo" href="#home" aria-label="Alex .sh — home">Alex<span class="logo-dot">&thinsp;.sh</span></a>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <div class="nav-links" id="nav-menu" role="list">
+          <a href="#home" role="listitem" class="nav-link active">Home</a>
+          <a href="#gallery" role="listitem" class="nav-link">Gallery</a>
+          <a href="#about" role="listitem" class="nav-link">About</a>
+          <a href="#contact" role="listitem" class="nav-link">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ====== HERO ====== -->
+      <section id="home" class="hero">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Photo Portfolio</p>
+          <h1>Cinematic street &amp;&nbsp;travel photography from Moscow and&nbsp;beyond.</h1>
+          <p class="hero-sub">A dark, cinematic study of light, place, and quiet human moments.</p>
+          <a class="cta" href="#gallery">Explore</a>
+        </div>
+        <div class="hero-image reveal">
+          <picture>
+            <source srcset="img/thumb/profile.webp" type="image/webp" />
+            <img
+              src="photos_compressed_low/profile.jpg"
+              alt="Alex .sh — photographer self-portrait with camera"
+              width="638"
+              height="800"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <!-- ====== GALLERY ====== -->
+      <section id="gallery" class="section">
+        <div class="section-head reveal">
+          <h2>Gallery</h2>
+          <p>Short captions only, focused on mood and place.</p>
+        </div>
+        <div class="gallery" role="list" aria-label="Photo gallery">
+
+          <!-- 1 — Summit Companions -->
+          <figure class="card reveal" role="listitem" data-full="img/full/_ART0294.webp" data-caption="Summit Companions" data-w="2000" data-h="1335">
+            <picture>
+              <source srcset="img/thumb/_ART0294.webp" type="image/webp" />
+              <img src="photos_compressed_low/_ART0294.jpg" alt="Two people on a cliff with snowy mountains and bright blue sky behind" width="800" height="534" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Summit Companions</figcaption>
+          </figure>
+
+          <!-- 2 — Blue Glow Smile -->
+          <figure class="card reveal" role="listitem" data-full="img/full/_ART8490.webp" data-caption="Blue Glow Smile" data-w="1335" data-h="2000">
+            <picture>
+              <source srcset="img/thumb/_ART8490.webp" type="image/webp" />
+              <img src="photos_compressed_low/_ART8490.jpg" alt="Smiling woman with short hair in blue and orange light" width="534" height="800" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Blue Glow Smile</figcaption>
+          </figure>
+
+          <!-- 3 — Temple Ruins -->
+          <figure class="card reveal" role="listitem" data-full="img/full/_ART1436.webp" data-caption="Temple Ruins" data-w="2000" data-h="1057">
+            <picture>
+              <source srcset="img/thumb/_ART1436.webp" type="image/webp" />
+              <img src="photos_compressed_low/_ART1436.jpg" alt="Temple ruins nestled in dense green forest with dappled light" width="800" height="423" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Temple Ruins</figcaption>
+          </figure>
+
+          <!-- 4 — Blue Light Structures -->
+          <figure class="card reveal" role="listitem" data-full="img/full/_ART0145.webp" data-caption="Blue Light Structures" data-w="1123" data-h="2000">
+            <picture>
+              <source srcset="img/thumb/_ART0145.webp" type="image/webp" />
+              <img src="photos_compressed_low/_ART0145.jpg" alt="Two large blue sculptural forms in a futuristic, neon-lit space" width="449" height="800" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Blue Light Structures</figcaption>
+          </figure>
+
+          <!-- 5 — Stream Crossing -->
+          <figure class="card reveal" role="listitem" data-full="img/full/_ART1125.webp" data-caption="Stream Crossing" data-w="2000" data-h="1436">
+            <picture>
+              <source srcset="img/thumb/_ART1125.webp" type="image/webp" />
+              <img src="photos_compressed_low/_ART1125.jpg" alt="Woman running across stones in a forest stream under soft sunlight" width="800" height="574" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Stream Crossing</figcaption>
+          </figure>
+
+          <!-- 6 — Lake View Pause -->
+          <figure class="card reveal" role="listitem" data-full="img/full/_ART1369.webp" data-caption="Lake View Pause" data-w="1336" data-h="2000">
+            <picture>
+              <source srcset="img/thumb/_ART1369.webp" type="image/webp" />
+              <img src="photos_compressed_low/_ART1369.jpg" alt="Person standing on a terrace overlooking a lake and mountains" width="534" height="800" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Lake View Pause</figcaption>
+          </figure>
+
+          <!-- 7 — City Lights -->
+          <figure class="card reveal" role="listitem" data-full="img/full/_ART6556.webp" data-caption="City Lights" data-w="2000" data-h="1335">
+            <picture>
+              <source srcset="img/thumb/_ART6556.webp" type="image/webp" />
+              <img src="photos_compressed_low/_ART6556.jpg" alt="Woman at night looking up amid festive city lights" width="800" height="534" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>City Lights</figcaption>
+          </figure>
+
+          <!-- 8 — Underground Basilica -->
+          <figure class="card reveal" role="listitem" data-full="img/full/_ART1569.webp" data-caption="Underground Basilica" data-w="1470" data-h="2000">
+            <picture>
+              <source srcset="img/thumb/_ART1569.webp" type="image/webp" />
+              <img src="photos_compressed_low/_ART1569.jpg" alt="Underground basilica with rows of columns and dim light" width="588" height="800" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Underground Basilica</figcaption>
+          </figure>
+
+          <!-- 9 — Red Lucky Cats -->
+          <figure class="card reveal" role="listitem" data-full="img/full/_ART0167.webp" data-caption="Red Lucky Cats" data-w="2000" data-h="1335">
+            <picture>
+              <source srcset="img/thumb/_ART0167.webp" type="image/webp" />
+              <img src="photos_compressed_low/_ART0167.jpg" alt="Two red cat figurines on an embroidered cloth with soft warm light" width="800" height="534" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Red Lucky Cats</figcaption>
+          </figure>
+
+          <!-- 10 — Night Walk -->
+          <figure class="card reveal" role="listitem" data-full="img/full/_ART2013.webp" data-caption="Night Walk" data-w="1336" data-h="2000">
+            <picture>
+              <source srcset="img/thumb/_ART2013.webp" type="image/webp" />
+              <img src="photos_compressed_low/_ART2013.jpg" alt="Man walking at night in a street with warm shop lights" width="534" height="800" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Night Walk</figcaption>
+          </figure>
+
+          <!-- 11 — Winter Framing -->
+          <figure class="card reveal" role="listitem" data-full="img/full/_ART0785.webp" data-caption="Winter Framing" data-w="2000" data-h="1883">
+            <picture>
+              <source srcset="img/thumb/_ART0785.webp" type="image/webp" />
+              <img src="photos_compressed_low/_ART0785.jpg" alt="Person photographing a winter lake and bare trees in cold light" width="800" height="753" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Winter Framing</figcaption>
+          </figure>
+
+          <!-- 12 — Steps at Dusk -->
+          <figure class="card reveal" role="listitem" data-full="img/full/_ART8405.webp" data-caption="Steps at Dusk" data-w="1335" data-h="2000">
+            <picture>
+              <source srcset="img/thumb/_ART8405.webp" type="image/webp" />
+              <img src="photos_compressed_low/_ART8405.jpg" alt="Woman standing on steps by a railing in blue dusk light" width="534" height="800" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Steps at Dusk</figcaption>
+          </figure>
+
+          <!-- 13 — Coastal Skyline -->
+          <figure class="card reveal" role="listitem" data-full="img/full/_ART1223.webp" data-caption="Coastal Skyline" data-w="2000" data-h="978">
+            <picture>
+              <source srcset="img/thumb/_ART1223.webp" type="image/webp" />
+              <img src="photos_compressed_low/_ART1223.jpg" alt="Coastal city skyline with beach and green foreground under hazy light" width="800" height="391" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Coastal Skyline</figcaption>
+          </figure>
+
+          <!-- 14 — Garden Guardian -->
+          <figure class="card reveal" role="listitem" data-full="img/full/_ART1203.webp" data-caption="Garden Guardian" data-w="2000" data-h="1729">
+            <picture>
+              <source srcset="img/thumb/_ART1203.webp" type="image/webp" />
+              <img src="photos_compressed_low/_ART1203.jpg" alt="Statue in traditional Chinese attire among green shrubs and temple details" width="800" height="691" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Garden Guardian</figcaption>
+          </figure>
+
+          <!-- 15 — Framed Hills -->
+          <figure class="card reveal" role="listitem" data-full="img/full/_ART1439.webp" data-caption="Framed Hills" data-w="1449" data-h="2000">
+            <picture>
+              <source srcset="img/thumb/_ART1439.webp" type="image/webp" />
+              <img src="photos_compressed_low/_ART1439.jpg" alt="Arched opening framing hills and a stela above traditional roofs" width="580" height="800" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Framed Hills</figcaption>
+          </figure>
+
+          <!-- 16 — Escalator Signal -->
+          <figure class="card reveal" role="listitem" data-full="img/full/_ART6964.webp" data-caption="Escalator Signal" data-w="2000" data-h="1421">
+            <picture>
+              <source srcset="img/thumb/_ART6964.webp" type="image/webp" />
+              <img src="photos_compressed_low/_ART6964.jpg" alt="Person on an escalator pointing under cool overhead lights" width="800" height="568" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Escalator Signal</figcaption>
+          </figure>
+
+          <!-- 17 — Quiet Cat -->
+          <figure class="card reveal" role="listitem" data-full="img/full/_ART2438.webp" data-caption="Quiet Cat" data-w="1335" data-h="2000">
+            <picture>
+              <source srcset="img/thumb/_ART2438.webp" type="image/webp" />
+              <img src="photos_compressed_low/_ART2438.jpg" alt="Striped cat resting on a cushion with soft muted light" width="534" height="800" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Quiet Cat</figcaption>
+          </figure>
+
+          <!-- 18 — Locomotive Star -->
+          <figure class="card reveal" role="listitem" data-full="img/full/_ART9158.webp" data-caption="Locomotive Star" data-w="2000" data-h="1335">
+            <picture>
+              <source srcset="img/thumb/_ART9158.webp" type="image/webp" />
+              <img src="photos_compressed_low/_ART9158.jpg" alt="Close view of a locomotive front with a star and bright headlamp" width="800" height="534" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Locomotive Star</figcaption>
+          </figure>
+
+          <!-- 19 — Bus Windows -->
+          <figure class="card reveal" role="listitem" data-full="img/full/_ART9159.webp" data-caption="Bus Windows" data-w="2000" data-h="1335">
+            <picture>
+              <source srcset="img/thumb/_ART9159.webp" type="image/webp" />
+              <img src="photos_compressed_low/_ART9159.jpg" alt="Bus windows in strong daylight, graphic dark shapes" width="800" height="534" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption>Bus Windows</figcaption>
+          </figure>
+
+        </div>
+      </section>
+
+      <!-- ====== ABOUT ====== -->
+      <section id="about" class="section">
+        <div class="section-head reveal">
+          <h2>About</h2>
+        </div>
+        <div class="about reveal">
+          <p>
+            I'm a traveling photographer focused on portraits and landscapes, drawn to quiet beauty
+            and honest presence. My work is shaped by street photography — watching light, movement,
+            and small moments that reveal character and place.
+          </p>
+          <p>
+            Whether I'm framing a face or a horizon, I aim for images that feel timeless, calm, and
+            precise. I photograph people and environments with an elegant, understated touch, creating
+            photographs that are both intimate and enduring.
+          </p>
+        </div>
+      </section>
+
+      <!-- ====== CONTACT ====== -->
+      <section id="contact" class="section">
+        <div class="section-head reveal">
+          <h2>Contact</h2>
+          <p>For collaborations or prints, reach out directly.</p>
+        </div>
+        <div class="contact reveal">
+          <a href="mailto:alex.svdk@gmail.com" aria-label="Send email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            alex.svdk@gmail.com
+          </a>
+          <a href="https://wa.me/79164962100" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <a href="https://t.me/a1ex5" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            Telegram
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-label="Photo viewer" aria-hidden="true">
+      <div class="lightbox-backdrop"></div>
+      <button class="lightbox-close" aria-label="Close viewer">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <button class="lightbox-nav lightbox-prev" aria-label="Previous photo">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="lightbox-nav lightbox-next" aria-label="Next photo">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+      </button>
+      <div class="lightbox-content">
+        <img class="lightbox-img" src="" alt="" />
+      </div>
+      <div class="lightbox-meta">
+        <span class="lightbox-caption"></span>
+        <span class="lightbox-counter"></span>
+      </div>
+    </div>
+
+    <footer class="footer" role="contentinfo">
+      <p>&copy; 2026 Alex&thinsp;.sh</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
