@@ -500,6 +500,31 @@ main {
   max-height: 85vh;
 }
 
+.lightbox-loader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s var(--ease);
+}
+
+.lightbox.is-loading .lightbox-loader {
+  opacity: 1;
+}
+
+.lightbox-loader-ring {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid rgba(201, 185, 163, 0.2);
+  border-top-color: var(--ink);
+  animation: lightbox-spin 0.9s linear infinite;
+  box-shadow: 0 0 20px rgba(201, 185, 163, 0.12);
+}
+
 .lightbox-img {
   max-width: 90vw;
   max-height: 82vh;
@@ -514,6 +539,12 @@ main {
 .lightbox.is-active .lightbox-img.is-loaded {
   opacity: 1;
   transform: scale(1);
+}
+
+@keyframes lightbox-spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .lightbox-close {

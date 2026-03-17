@@ -101,6 +101,7 @@
 
   function openLightbox(index) {
     lbIndex = index;
+    lightbox.classList.add("is-loading");
     showSlide();
     lightbox.classList.add("is-active");
     lightbox.setAttribute("aria-hidden", "false");
@@ -110,6 +111,7 @@
 
   function closeLightbox() {
     lightbox.classList.remove("is-active");
+    lightbox.classList.remove("is-loading");
     lightbox.setAttribute("aria-hidden", "true");
     document.body.classList.remove("lightbox-open");
     lbImg.classList.remove("is-loaded");
@@ -124,11 +126,16 @@
     var alt = card.querySelector("img").getAttribute("alt") || caption;
 
     lbImg.classList.remove("is-loaded");
+    lightbox.classList.add("is-loading");
     lbCaption.textContent = caption;
     lbCounter.textContent = (lbIndex + 1) + " / " + galleryItems.length;
 
     lbImg.onload = function () {
       lbImg.classList.add("is-loaded");
+      lightbox.classList.remove("is-loading");
+    };
+    lbImg.onerror = function () {
+      lightbox.classList.remove("is-loading");
     };
     lbImg.setAttribute("alt", alt);
     lbImg.setAttribute("src", src);
@@ -136,6 +143,7 @@
     // If image is already cached
     if (lbImg.complete && lbImg.naturalWidth > 0) {
       lbImg.classList.add("is-loaded");
+      lightbox.classList.remove("is-loading");
     }
   }
 
