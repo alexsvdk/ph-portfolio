@@ -521,8 +521,12 @@ main {
   border-radius: 50%;
   border: 2px solid rgba(201, 185, 163, 0.2);
   border-top-color: var(--ink);
-  animation: lightbox-spin 0.9s linear infinite;
   box-shadow: 0 0 20px rgba(201, 185, 163, 0.12);
+  will-change: transform;
+}
+
+.lightbox.is-loading .lightbox-loader-ring {
+  animation: lightbox-spin 0.9s linear infinite;
 }
 
 .lightbox-img {
